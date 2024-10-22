@@ -30,7 +30,7 @@ services:
     networks:
       - default
     volumes:
-      - "./jupyterhub_config.py:/srv/jupyterhub/jupyterhub_config.py:ro"
+      - "/opt/prometheus_stack/jupyterhub_config.py:/srv/jupyterhub/jupyterhub_config.py:ro"
       - "/var/run/docker.sock:/var/run/docker.sock:rw"
       - "jupyterhub-data:/data"
     ports:
