@@ -51,11 +51,11 @@ c.JupyterHub.cookie_secret_file = "/data/jupyterhub_cookie_secret"
 c.JupyterHub.db_url = "sqlite:////data/jupyterhub.sqlite"
 
 # Allow all signed-up users to login
-#c.Authenticator.allow_all = True
+c.Authenticator.allow_all = True
 
 # Authenticate users with Native Authenticator
-#c.JupyterHub.authenticator_class = "nativeauthenticator.NativeAuthenticator"
-c.Authenticator.allow_all = True
+c.JupyterHub.authenticator_class = "nativeauthenticator.NativeAuthenticator"
+
 # Allow anyone to sign-up without approval
 #c.NativeAuthenticator.open_signup = True
 
