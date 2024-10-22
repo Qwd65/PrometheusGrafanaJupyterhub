@@ -12,7 +12,7 @@ c = get_config()  # noqa: F821
 
 # Spawn single-user servers as Docker containers
 c.JupyterHub.spawner_class = "dockerspawner.DockerSpawner"
-
+c.JupyterHub.allow_all_metrics_access = True
 c.JupyterHub.allow_origin = '*'
 
 
